@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stripe:stripe-android-issuing-push-provisioning:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/26d30eac0c5989c03ad8bb4906129f7a/transformed/jetified-stripe-android-issuing-push-provisioning-1.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/26d30eac0c5989c03ad8bb4906129f7a/transformed/jetified-stripe-android-issuing-push-provisioning-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

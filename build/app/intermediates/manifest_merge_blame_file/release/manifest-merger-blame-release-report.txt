@@ -1,0 +1,978 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pickupjob.gobizgrow.com"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:3:4-75
+11-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:3:21-73
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:4:4-78
+12-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:4:21-75
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:5:4-65
+13-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:5:21-63
+14    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+14-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:6:4-75
+14-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:6:21-72
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:7:4-80
+15-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:7:21-77
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Internet permission -->
+16-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:8:4-79
+16-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:8:21-76
+17    <uses-feature
+17-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:4-83
+18        android:name="android.hardware.camera"
+18-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:18-56
+19        android:required="true" />
+19-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:57-80
+20
+21    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+21-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:10:4-80
+21-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:10:21-77
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:11:4-78
+22-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:11:21-75
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:12:4-76
+23-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:12:21-73
+24    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+24-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:13:4-83
+24-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:13:21-81
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-68
+25-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-65
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-65
+26-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-62
+27    <uses-permission android:name="android.permission.FLASHLIGHT" />
+27-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-69
+27-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-66
+28    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+28-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+28-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-78
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-66
+29-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-63
+30    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+30-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-81
+30-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-78
+31    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
+31-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
+31-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:22-76
+32    <queries>
+32-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:12:5-20:15
+33
+34        <!-- Added to check the default browser that will host the AuthFlow. -->
+35        <intent>
+35-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:15:9-19:18
+36            <action android:name="android.intent.action.VIEW" />
+36-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+36-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+37
+38            <data android:scheme="http" />
+38-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+38-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+39        </intent>
+40        <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+41        <package android:name="com.android.chrome" />
+41-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:13:9-54
+41-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:13:18-51
+42
+43        <intent>
+43-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:13:9-17:18
+44            <action android:name="android.intent.action.VIEW" />
+44-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+44-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+45
+46            <data android:scheme="https" />
+46-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+46-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+47        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+48        <package android:name="com.google.android.apps.maps" />
+48-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:9-64
+48-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:33:18-61
+49    </queries>
+50
+51    <uses-feature
+51-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:26:5-28:35
+52        android:glEsVersion="0x00020000"
+52-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:27:9-41
+53        android:required="true" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+53-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:28:9-32
+54    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+54-->[com.google.firebase:firebase-iid:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/dfc54ba50c63b6e7eb1a51c034ea9227/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:5-82
+54-->[com.google.firebase:firebase-iid:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/dfc54ba50c63b6e7eb1a51c034ea9227/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:26:22-79
+55    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+55-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/9e576393fccd3e5f9c65f286cfcce456/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:5-79
+55-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/9e576393fccd3e5f9c65f286cfcce456/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:25:22-76
+56    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+56-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:5-110
+56-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:26:22-107
+57
+58    <permission
+58-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+59        android:name="pickupjob.gobizgrow.com.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+59-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+60        android:protectionLevel="signature" />
+60-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+61
+62    <uses-permission android:name="pickupjob.gobizgrow.com.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+62-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+62-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+63
+64    <application
+65        android:name="android.app.Application"
+65-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:16:9-42
+66        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+66-->[androidx.core:core:1.9.0] /Users/sypsys/.gradle/caches/transforms-3/e9433dd134e5fb8f10cb6d115348b6f6/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+67        android:icon="@mipmap/launcher_icon"
+67-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:17:9-45
+68        android:label="pickupjob"
+68-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:15:9-34
+69        android:largeHeap="true"
+69-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-33
+70        android:theme="@style/Theme.AppCompat.NoActionBar" >
+70-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:17:9-59
+71        <activity
+71-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:18:9-38:20
+72            android:name="pickupjob.gobizgrow.com.MainActivity"
+72-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:19:13-41
+73            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+73-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:23:13-163
+74            android:exported="true"
+74-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:20:13-36
+75            android:hardwareAccelerated="true"
+75-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:24:13-47
+76            android:launchMode="singleTop"
+76-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:21:13-43
+77            android:theme="@style/LaunchTheme"
+77-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:22:13-47
+78            android:windowSoftInputMode="adjustResize" >
+78-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:25:13-55
+79
+80            <!--
+81                 Specifies an Android theme to apply to this Activity as soon as
+82                 the Android process has started. This theme is visible to the user
+83                 while the Flutter UI initializes. After that, this theme continues
+84                 to determine the Window background behind the Flutter UI.
+85            -->
+86            <meta-data
+86-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:30:13-33:17
+87                android:name="io.flutter.embedding.android.NormalTheme"
+87-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:31:15-70
+88                android:resource="@style/NormalTheme" />
+88-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:32:15-52
+89
+90            <intent-filter>
+90-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:34:13-37:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:35:17-68
+91-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:35:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:36:17-76
+93-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:36:27-74
+94            </intent-filter>
+95        </activity>
+96        <!--
+97             Don't delete the meta-data below.
+98             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+99        -->
+100        <meta-data
+100-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:41:9-43:33
+101            android:name="flutterEmbedding"
+101-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:42:13-44
+102            android:value="2" />
+102-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:43:13-30
+103        <meta-data
+103-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:44:9-45:69
+104            android:name="com.google.android.geo.API_KEY"
+104-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:44:20-65
+105            android:value="AIzaSyCe2c5wnzwWCrtk-U-MvBIbvVn2rswuxpQ" />
+105-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:45:12-67
+106        <meta-data
+106-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:46:9-96
+107            android:name="firebase_messaging_auto_init_enabled"
+107-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:46:20-71
+108            android:value="true" />
+108-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:46:73-93
+109        <meta-data
+109-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:47:9-96
+110            android:name="firebase_analytics_collection_enabled"
+110-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:47:20-72
+111            android:value="true" />
+111-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:47:73-93
+112        <meta-data
+112-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:49:9-51:51
+113            android:name="com.google.firebase.messaging.default_notification_channel_id"
+113-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:50:9-85
+114            android:value="high_importance_channel" />
+114-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:51:9-48
+115
+116        <service
+116-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:52:9-139
+117            android:name="com.google.android.gms.measurement.AppMeasurementService"
+117-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:52:18-89
+118            android:enabled="true"
+118-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:52:90-112
+119            android:exported="false" />
+119-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:52:113-137
+120
+121        <receiver
+121-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:53:9-57:20
+122            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+122-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:53:19-91
+123            android:enabled="true"
+123-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:53:92-114
+124            android:exported="false" >
+124-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:32:13-37
+125            <intent-filter>
+125-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:54:13-56:29
+126                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+126-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:55:17-84
+126-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:55:25-81
+127            </intent-filter>
+128        </receiver>
+129
+130        <service
+130-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+131            android:name="com.google.firebase.components.ComponentDiscoveryService"
+131-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:10:18-89
+132            android:directBootAware="true"
+132-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
+133            android:exported="false" >
+133-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:23:13-37
+134            <meta-data
+134-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+135                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+135-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-134
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+137            <meta-data
+137-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:85
+138                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+138-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-128
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-82
+140            <meta-data
+140-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+141                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+141-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+143            <meta-data
+143-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+144                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+144-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-126
+145                android:value="com.google.firebase.components.ComponentRegistrar" />
+145-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+146            <meta-data
+146-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-40:85
+147                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+147-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:39:17-128
+148                android:value="com.google.firebase.components.ComponentRegistrar" />
+148-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:40:17-82
+149            <meta-data
+149-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+150                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+150-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:24:13-26:85
+153                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+153-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:25:17-144
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:26:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-firestore:24.4.1] /Users/sypsys/.gradle/caches/transforms-3/84c1467ad17ba263769b2703278f06e7/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:19:13-21:85
+156                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+156-->[com.google.firebase:firebase-firestore:24.4.1] /Users/sypsys/.gradle/caches/transforms-3/84c1467ad17ba263769b2703278f06e7/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:20:17-111
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-firestore:24.4.1] /Users/sypsys/.gradle/caches/transforms-3/84c1467ad17ba263769b2703278f06e7/transformed/jetified-firebase-firestore-24.4.1/AndroidManifest.xml:21:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-iid:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/dfc54ba50c63b6e7eb1a51c034ea9227/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:32:13-34:85
+159                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+159-->[com.google.firebase:firebase-iid:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/dfc54ba50c63b6e7eb1a51c034ea9227/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:33:17-96
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-iid:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/dfc54ba50c63b6e7eb1a51c034ea9227/transformed/jetified-firebase-iid-21.1.0/AndroidManifest.xml:34:17-82
+161            <meta-data
+161-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/9e576393fccd3e5f9c65f286cfcce456/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:31:13-33:85
+162                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+162-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/9e576393fccd3e5f9c65f286cfcce456/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:32:17-139
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.android.gms:play-services-measurement-api:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/9e576393fccd3e5f9c65f286cfcce456/transformed/jetified-play-services-measurement-api-21.2.0/AndroidManifest.xml:33:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-storage:20.1.0] /Users/sypsys/.gradle/caches/transforms-3/794be3fb890422b95301fa91ef106982/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:32:13-34:85
+165                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+165-->[com.google.firebase:firebase-storage:20.1.0] /Users/sypsys/.gradle/caches/transforms-3/794be3fb890422b95301fa91ef106982/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:33:17-107
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-storage:20.1.0] /Users/sypsys/.gradle/caches/transforms-3/794be3fb890422b95301fa91ef106982/transformed/jetified-firebase-storage-20.1.0/AndroidManifest.xml:34:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:67:13-69:85
+168                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+168-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:68:17-109
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:69:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:55:13-57:85
+171                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+171-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:56:17-119
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:57:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-inappmessaging:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/d5d1d8521816890873db28ed3545e7b7/transformed/jetified-firebase-inappmessaging-20.2.0/AndroidManifest.xml:16:13-18:85
+174                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+174-->[com.google.firebase:firebase-inappmessaging:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/d5d1d8521816890873db28ed3545e7b7/transformed/jetified-firebase-inappmessaging-20.2.0/AndroidManifest.xml:17:17-129
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-inappmessaging:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/d5d1d8521816890873db28ed3545e7b7/transformed/jetified-firebase-inappmessaging-20.2.0/AndroidManifest.xml:18:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-installations:17.1.0] /Users/sypsys/.gradle/caches/transforms-3/096c4070ccaa573bac42c8a8d5409fb0/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:17:13-19:85
+177                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+177-->[com.google.firebase:firebase-installations:17.1.0] /Users/sypsys/.gradle/caches/transforms-3/096c4070ccaa573bac42c8a8d5409fb0/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:18:17-127
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-installations:17.1.0] /Users/sypsys/.gradle/caches/transforms-3/096c4070ccaa573bac42c8a8d5409fb0/transformed/jetified-firebase-installations-17.1.0/AndroidManifest.xml:19:17-82
+179            <meta-data
+179-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/sypsys/.gradle/caches/transforms-3/bba2c805bb32fc98705e57b65ffb2c59/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:27:13-29:85
+180                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+180-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/sypsys/.gradle/caches/transforms-3/bba2c805bb32fc98705e57b65ffb2c59/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:28:17-115
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.firebase:firebase-datatransport:18.1.7] /Users/sypsys/.gradle/caches/transforms-3/bba2c805bb32fc98705e57b65ffb2c59/transformed/jetified-firebase-datatransport-18.1.7/AndroidManifest.xml:29:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-abt:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/ea1ed5d85f6f1b1549e3ed796db072c5/transformed/jetified-firebase-abt-21.1.0/AndroidManifest.xml:12:13-14:85
+183                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+183-->[com.google.firebase:firebase-abt:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/ea1ed5d85f6f1b1549e3ed796db072c5/transformed/jetified-firebase-abt-21.1.0/AndroidManifest.xml:13:17-109
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-abt:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/ea1ed5d85f6f1b1549e3ed796db072c5/transformed/jetified-firebase-abt-21.1.0/AndroidManifest.xml:14:17-82
+185        </service>
+186        <service
+186-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-19:72
+187            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+187-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-107
+188            android:exported="false"
+188-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+189            android:permission="android.permission.BIND_JOB_SERVICE" />
+189-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-69
+190        <service
+190-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-26:19
+191            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+191-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-97
+192            android:exported="false" >
+192-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-37
+193            <intent-filter>
+193-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+194                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+194-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+194-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+195            </intent-filter>
+196        </service>
+197
+198        <receiver
+198-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-35:20
+199            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+199-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-98
+200            android:exported="true"
+200-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-36
+201            android:permission="com.google.android.c2dm.permission.SEND" >
+201-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-73
+202            <intent-filter>
+202-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+203                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+203-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+203-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+204            </intent-filter>
+205        </receiver>
+206
+207        <provider
+207-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:9-47:38
+208            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+208-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-102
+209            android:authorities="pickupjob.gobizgrow.com.flutterfirebasemessaginginitprovider"
+209-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-88
+210            android:exported="false"
+210-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:46:13-37
+211            android:initOrder="99" />
+211-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:47:13-35
+212
+213        <service
+213-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:56
+214            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+214-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-77
+215            android:enabled="true"
+215-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-35
+216            android:exported="false"
+216-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-37
+217            android:foregroundServiceType="location" />
+217-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-53
+218
+219        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
+219-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-91
+219-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/release/AndroidManifest.xml:18:19-88
+220
+221        <provider
+221-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+222            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+222-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+223            android:authorities="pickupjob.gobizgrow.com.flutter.image_provider"
+223-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+224            android:exported="false"
+224-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+225            android:grantUriPermissions="true" >
+225-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+226            <meta-data
+226-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+227                android:name="android.support.FILE_PROVIDER_PATHS"
+227-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+228                android:resource="@xml/flutter_image_picker_file_paths" />
+228-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+229        </provider>
+230
+231        <receiver
+231-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-18:40
+232            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+232-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-91
+233            android:exported="false" />
+233-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+234        <receiver
+234-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:19:9-21:40
+235            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+235-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-97
+236            android:exported="false" />
+236-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+237        <receiver
+237-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:22:9-31:20
+238            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+238-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-101
+239            android:exported="false" >
+239-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-37
+240            <intent-filter>
+240-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-30:29
+241                <action android:name="android.intent.action.BOOT_COMPLETED" />
+241-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-79
+241-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:25-76
+242                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+242-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:17-84
+242-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:27:25-81
+243                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+243-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-82
+243-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-79
+244                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+244-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:17-82
+244-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:29:25-79
+245            </intent-filter>
+246        </receiver>
+247
+248        <activity
+248-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:10:9-13:69
+249            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+249-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:11:13-80
+250            android:exported="false"
+250-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:12:13-37
+251            android:theme="@style/StripePaymentSheetDefaultTheme" />
+251-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:13:13-66
+252        <activity
+252-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:14:9-17:69
+253            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+253-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:15:13-82
+254            android:exported="false"
+254-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:16:13-37
+255            android:theme="@style/StripePaymentSheetDefaultTheme" />
+255-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:17:13-66
+256        <activity
+256-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:18:9-21:69
+257            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+257-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:19:13-97
+258            android:exported="false"
+258-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:20:13-37
+259            android:theme="@style/StripePaymentSheetDefaultTheme" />
+259-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:21:13-66
+260        <activity
+260-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:22:9-25:69
+261            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+261-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:23:13-105
+262            android:exported="false"
+262-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:24:13-37
+263            android:theme="@style/StripePaymentSheetDefaultTheme" />
+263-->[com.stripe:paymentsheet:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/0ca0b06eb40ac443b49f4e037b068999/transformed/jetified-paymentsheet-20.15.4/AndroidManifest.xml:25:13-66
+264        <activity
+264-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:10:9-15:58
+265            android:name="com.stripe.android.link.LinkActivity"
+265-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:11:13-64
+266            android:exported="false"
+266-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:12:13-37
+267            android:label="@string/link"
+267-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:13:13-41
+268            android:theme="@style/LinkBaseTheme"
+268-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:14:13-49
+269            android:windowSoftInputMode="adjustResize" />
+269-->[com.stripe:link:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/5fa82cb5171741d6a14801b4efde66f7/transformed/jetified-link-20.15.4/AndroidManifest.xml:15:13-55
+270        <activity
+270-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:23:9-42:20
+271            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+271-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:24:13-109
+272            android:exported="true" >
+272-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:25:13-36
+273            <intent-filter>
+273-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:26:13-41:29
+274                <action android:name="android.intent.action.VIEW" />
+274-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+274-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+275
+276                <category android:name="android.intent.category.DEFAULT" />
+276-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:17-76
+276-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:27-73
+277                <category android:name="android.intent.category.BROWSABLE" />
+277-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:17-78
+277-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:27-75
+278
+279                <!-- Accepts success and cancel URIs that begin with "stripe-auth://link-accounts” -->
+280                <data
+280-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+281                    android:host="link-accounts"
+282                    android:path="/pickupjob.gobizgrow.com/success"
+283                    android:scheme="stripe-auth" />
+283-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+284                <data
+284-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+285                    android:host="link-accounts"
+286                    android:path="/pickupjob.gobizgrow.com/cancel"
+287                    android:scheme="stripe-auth" />
+287-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+288            </intent-filter>
+289        </activity>
+290        <activity
+290-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:43:9-46:57
+291            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+291-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:44:13-101
+292            android:exported="false"
+292-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:45:13-37
+293            android:theme="@style/StripeDefaultTheme" />
+293-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:46:13-54
+294
+295        <provider
+295-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:48:9-52:43
+296            android:name="com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer"
+296-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:49:13-114
+297            android:authorities="pickupjob.gobizgrow.com.financialconnections-init"
+297-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:50:13-77
+298            android:exported="false"
+298-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:51:13-37
+299            android:multiprocess="true" />
+299-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:52:13-40
+300
+301        <activity
+301-->[com.stripe:payments-ui-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/2edd42c5b497e88758f7e8f1ce0dc66d/transformed/jetified-payments-ui-core-20.15.4/AndroidManifest.xml:10:9-13:69
+302            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+302-->[com.stripe:payments-ui-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/2edd42c5b497e88758f7e8f1ce0dc66d/transformed/jetified-payments-ui-core-20.15.4/AndroidManifest.xml:11:13-80
+303            android:exported="false"
+303-->[com.stripe:payments-ui-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/2edd42c5b497e88758f7e8f1ce0dc66d/transformed/jetified-payments-ui-core-20.15.4/AndroidManifest.xml:12:13-37
+304            android:theme="@style/StripePaymentSheetDefaultTheme" />
+304-->[com.stripe:payments-ui-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/2edd42c5b497e88758f7e8f1ce0dc66d/transformed/jetified-payments-ui-core-20.15.4/AndroidManifest.xml:13:13-66
+305        <activity
+305-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:17:9-20:57
+306            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+306-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:18:13-76
+307            android:exported="false"
+307-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:19:13-37
+308            android:theme="@style/StripeDefaultTheme" />
+308-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:20:13-54
+309        <activity
+309-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:21:9-24:57
+310            android:name="com.stripe.android.view.PaymentMethodsActivity"
+310-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:22:13-74
+311            android:exported="false"
+311-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:23:13-37
+312            android:theme="@style/StripeDefaultTheme" />
+312-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:24:13-54
+313        <activity
+313-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:25:9-28:57
+314            android:name="com.stripe.android.view.PaymentFlowActivity"
+314-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:26:13-71
+315            android:exported="false"
+315-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:27:13-37
+316            android:theme="@style/StripeDefaultTheme" />
+316-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:28:13-54
+317        <activity
+317-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:29:9-33:58
+318            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+318-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:30:13-78
+319            android:exported="false"
+319-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:31:13-37
+320            android:theme="@style/StripeDefaultTheme"
+320-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:32:13-54
+321            android:windowSoftInputMode="adjustResize" />
+321-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:33:13-55
+322        <activity
+322-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:34:9-37:61
+323            android:name="com.stripe.android.view.PaymentRelayActivity"
+323-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:35:13-72
+324            android:exported="false"
+324-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:36:13-37
+325            android:theme="@style/StripeTransparentTheme" />
+325-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:37:13-58
+326        <!--
+327        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+328        launched the browser Activity will also handle the return URL deep link.
+329        -->
+330        <activity
+330-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:43:9-47:61
+331            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+331-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:44:13-85
+332            android:exported="false"
+332-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:45:13-37
+333            android:launchMode="singleTask"
+333-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:46:13-44
+334            android:theme="@style/StripeTransparentTheme" />
+334-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:47:13-58
+335        <activity
+335-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:48:9-65:20
+336            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+336-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:49:13-88
+337            android:exported="true"
+337-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:50:13-36
+338            android:launchMode="singleTask"
+338-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:51:13-44
+339            android:theme="@style/StripeTransparentTheme" >
+339-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:52:13-58
+340            <intent-filter>
+340-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:53:13-64:29
+341                <action android:name="android.intent.action.VIEW" />
+341-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+341-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+342
+343                <category android:name="android.intent.category.DEFAULT" />
+343-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:17-76
+343-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:27-73
+344                <category android:name="android.intent.category.BROWSABLE" />
+344-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:17-78
+344-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:27-75
+345
+346                <!-- Must match `DefaultReturnUrl#value`. -->
+347                <data
+347-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+348                    android:host="payment_return_url"
+349                    android:path="/pickupjob.gobizgrow.com"
+350                    android:scheme="stripesdk" />
+350-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+351            </intent-filter>
+352        </activity>
+353        <activity
+353-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:66:9-69:57
+354            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+354-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:67:13-114
+355            android:exported="false"
+355-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:68:13-37
+356            android:theme="@style/StripeDefaultTheme" />
+356-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:69:13-54
+357        <activity
+357-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:70:9-73:66
+358            android:name="com.stripe.android.googlepaylauncher.StripeGooglePayActivity"
+358-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:71:13-88
+359            android:exported="false"
+359-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:72:13-37
+360            android:theme="@style/StripeGooglePayDefaultTheme" />
+360-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:73:13-63
+361        <activity
+361-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:74:9-77:66
+362            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+362-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:75:13-90
+363            android:exported="false"
+363-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:76:13-37
+364            android:theme="@style/StripeGooglePayDefaultTheme" />
+364-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:77:13-63
+365        <activity
+365-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:78:9-81:66
+366            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+366-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:79:13-103
+367            android:exported="false"
+367-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:80:13-37
+368            android:theme="@style/StripeGooglePayDefaultTheme" />
+368-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:81:13-63
+369        <activity
+369-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:82:9-85:62
+370            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+370-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:83:13-107
+371            android:exported="false"
+371-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:84:13-37
+372            android:theme="@style/PayLauncherDefaultTheme" />
+372-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:85:13-59
+373        <activity
+373-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:86:9-89:61
+374            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+374-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:87:13-97
+375            android:exported="false"
+375-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:88:13-37
+376            android:theme="@style/StripeTransparentTheme" />
+376-->[com.stripe:payments-core:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/bddcc9826154bbc8f1a87de5a4acdee3/transformed/jetified-payments-core-20.15.4/AndroidManifest.xml:89:13-58
+377        <activity
+377-->[com.stripe:stripe-3ds2-android:6.1.5] /Users/sypsys/.gradle/caches/transforms-3/1994359ff85f03d5ed4afcb95f120434/transformed/jetified-stripe-3ds2-android-6.1.5/AndroidManifest.xml:10:9-13:54
+378            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+378-->[com.stripe:stripe-3ds2-android:6.1.5] /Users/sypsys/.gradle/caches/transforms-3/1994359ff85f03d5ed4afcb95f120434/transformed/jetified-stripe-3ds2-android-6.1.5/AndroidManifest.xml:11:13-81
+379            android:exported="false"
+379-->[com.stripe:stripe-3ds2-android:6.1.5] /Users/sypsys/.gradle/caches/transforms-3/1994359ff85f03d5ed4afcb95f120434/transformed/jetified-stripe-3ds2-android-6.1.5/AndroidManifest.xml:12:13-37
+380            android:theme="@style/Stripe3DS2Theme" /> <!-- Needs to be explicitly declared on P+ -->
+380-->[com.stripe:stripe-3ds2-android:6.1.5] /Users/sypsys/.gradle/caches/transforms-3/1994359ff85f03d5ed4afcb95f120434/transformed/jetified-stripe-3ds2-android-6.1.5/AndroidManifest.xml:13:13-51
+381        <uses-library
+381-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:39:9-41:40
+382            android:name="org.apache.http.legacy"
+382-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:40:13-50
+383            android:required="false" />
+383-->[com.google.android.gms:play-services-maps:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/f557f429e345833bea543d6eda661c59/transformed/jetified-play-services-maps-18.1.0/AndroidManifest.xml:41:13-37
+384
+385        <activity
+385-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:27:9-44:20
+386            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+386-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:28:13-80
+387            android:excludeFromRecents="true"
+387-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:29:13-46
+388            android:exported="true"
+388-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:30:13-36
+389            android:launchMode="singleTask"
+389-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:31:13-44
+390            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+390-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:32:13-72
+391            <intent-filter>
+391-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:33:13-43:29
+392                <action android:name="android.intent.action.VIEW" />
+392-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+392-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+393
+394                <category android:name="android.intent.category.DEFAULT" />
+394-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:17-76
+394-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:27-73
+395                <category android:name="android.intent.category.BROWSABLE" />
+395-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:17-78
+395-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:27-75
+396
+397                <data
+397-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+398                    android:host="firebase.auth"
+399                    android:path="/"
+400                    android:scheme="genericidp" />
+400-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+401            </intent-filter>
+402        </activity>
+403        <activity
+403-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:45:9-62:20
+404            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+404-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:46:13-79
+405            android:excludeFromRecents="true"
+405-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:47:13-46
+406            android:exported="true"
+406-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:48:13-36
+407            android:launchMode="singleTask"
+407-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:49:13-44
+408            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+408-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:50:13-72
+409            <intent-filter>
+409-->[com.google.firebase:firebase-auth:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/25d3f53f21e7188d90db5bd11a7754c0/transformed/jetified-firebase-auth-21.1.0/AndroidManifest.xml:51:13-61:29
+410                <action android:name="android.intent.action.VIEW" />
+410-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:13-65
+410-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:16:21-62
+411
+412                <category android:name="android.intent.category.DEFAULT" />
+412-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:17-76
+412-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:29:27-73
+413                <category android:name="android.intent.category.BROWSABLE" />
+413-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:17-78
+413-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:30:27-75
+414
+415                <data
+415-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:13-43
+416                    android:host="firebase.auth"
+417                    android:path="/"
+418                    android:scheme="recaptcha" />
+418-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:18:19-40
+419            </intent-filter>
+420        </activity>
+421
+422        <receiver
+422-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:31:9-38:20
+423            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+423-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:32:13-78
+424            android:exported="true"
+424-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:33:13-36
+425            android:permission="com.google.android.c2dm.permission.SEND" >
+425-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:34:13-73
+426            <intent-filter>
+426-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:32:13-34:29
+427                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+427-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:17-81
+427-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:33:25-78
+428            </intent-filter>
+429        </receiver>
+430        <!--
+431             FirebaseMessagingService performs security checks at runtime,
+432             but set to not exported to explicitly avoid allowing another app to call it.
+433        -->
+434        <service
+434-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:44:9-51:19
+435            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+435-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:45:13-82
+436            android:directBootAware="true"
+436-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:46:13-43
+437            android:exported="false" >
+437-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:47:13-37
+438            <intent-filter android:priority="-500" >
+438-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-25:29
+439                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+439-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-78
+439-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-75
+440            </intent-filter>
+441        </service>
+442
+443        <provider
+443-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:25:9-30:39
+444            android:name="com.google.firebase.provider.FirebaseInitProvider"
+444-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:26:13-77
+445            android:authorities="pickupjob.gobizgrow.com.firebaseinitprovider"
+445-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:27:13-72
+446            android:directBootAware="true"
+446-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:28:13-43
+447            android:exported="false"
+447-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:29:13-37
+448            android:initOrder="100" />
+448-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:30:13-36
+449
+450        <activity
+450-->[com.google.android.gms:play-services-base:18.0.1] /Users/sypsys/.gradle/caches/transforms-3/617e4462888a4285d6d948c8ba44da4a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+451            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+451-->[com.google.android.gms:play-services-base:18.0.1] /Users/sypsys/.gradle/caches/transforms-3/617e4462888a4285d6d948c8ba44da4a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+452            android:exported="false"
+452-->[com.google.android.gms:play-services-base:18.0.1] /Users/sypsys/.gradle/caches/transforms-3/617e4462888a4285d6d948c8ba44da4a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+453            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+453-->[com.google.android.gms:play-services-base:18.0.1] /Users/sypsys/.gradle/caches/transforms-3/617e4462888a4285d6d948c8ba44da4a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+454
+455        <service
+455-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:39:9-43:72
+456            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+456-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:40:13-87
+457            android:enabled="true"
+457-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:41:13-35
+458            android:exported="false"
+458-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:42:13-37
+459            android:permission="android.permission.BIND_JOB_SERVICE" />
+459-->[com.google.android.gms:play-services-measurement:21.2.0] /Users/sypsys/.gradle/caches/transforms-3/6becfeb980f3e9e3a45a075f810ca534/transformed/jetified-play-services-measurement-21.2.0/AndroidManifest.xml:43:13-69
+460
+461        <meta-data
+461-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/fccdbddcf01c6b70765a9f810fe76c78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+462            android:name="com.google.android.gms.version"
+462-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/fccdbddcf01c6b70765a9f810fe76c78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+463            android:value="@integer/google_play_services_version" />
+463-->[com.google.android.gms:play-services-basement:18.1.0] /Users/sypsys/.gradle/caches/transforms-3/fccdbddcf01c6b70765a9f810fe76c78/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+464
+465        <uses-library
+465-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+466            android:name="androidx.window.extensions"
+466-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+467            android:required="false" />
+467-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+468        <uses-library
+468-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+469            android:name="androidx.window.sidecar"
+469-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+470            android:required="false" />
+470-->[androidx.window:window:1.0.0-beta04] /Users/sypsys/.gradle/caches/transforms-3/07d36513390bfe868a4148da283ab2bf/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+471
+472        <service
+472-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+473            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+473-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+474            android:exported="false" >
+474-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+475            <meta-data
+475-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+476                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+476-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+477                android:value="cct" />
+477-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/6bc813a6d2eef619859d8918d671b862/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+478        </service>
+479        <service
+479-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+480            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+480-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+481            android:exported="false"
+481-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+482            android:permission="android.permission.BIND_JOB_SERVICE" >
+482-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+483        </service>
+484
+485        <receiver
+485-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+486            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+486-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+487            android:exported="false" />
+487-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/sypsys/.gradle/caches/transforms-3/c5f08f987c355e8923556e6df33dee17/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+488
+489        <provider
+489-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+490            android:name="androidx.startup.InitializationProvider"
+490-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+491            android:authorities="pickupjob.gobizgrow.com.androidx-startup"
+491-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+492            android:exported="false" >
+492-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+493            <meta-data
+493-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+494                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+494-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+495                android:value="androidx.startup" />
+495-->[androidx.emoji2:emoji2:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3235db657de3cf6a8b8294784368766f/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+496            <meta-data
+496-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:30:13-32:52
+497                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+497-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:31:17-85
+498                android:value="androidx.startup" />
+498-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:32:17-49
+499            <meta-data
+499-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/sypsys/.gradle/caches/transforms-3/0cc39eefba89f07f513708db12e60bb3/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+500                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+500-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/sypsys/.gradle/caches/transforms-3/0cc39eefba89f07f513708db12e60bb3/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+501                android:value="androidx.startup" />
+501-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/sypsys/.gradle/caches/transforms-3/0cc39eefba89f07f513708db12e60bb3/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+502        </provider>
+503
+504        <receiver
+504-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:35:9-47:20
+505            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+505-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:36:13-76
+506            android:directBootAware="false"
+506-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:37:13-44
+507            android:enabled="true"
+507-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:38:13-35
+508            android:exported="true"
+508-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:39:13-36
+509            android:permission="android.permission.DUMP" >
+509-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:40:13-57
+510            <intent-filter>
+510-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:41:13-43:29
+511                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+511-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:42:17-91
+511-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:42:25-88
+512            </intent-filter>
+513            <intent-filter>
+513-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:44:13-46:29
+514                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+514-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:45:17-85
+514-->[androidx.profileinstaller:profileinstaller:1.2.0] /Users/sypsys/.gradle/caches/transforms-3/3dac8f40e08603d8a91604cce95528ba/transformed/jetified-profileinstaller-1.2.0/AndroidManifest.xml:45:25-82
+515            </intent-filter>
+516        </receiver>
+517
+518        <meta-data
+518-->[com.google.android.instantapps:instantapps:1.1.0] /Users/sypsys/.gradle/caches/transforms-3/0071b2930d1ef1b7aa23968660d626df/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:10:9-12:33
+519            android:name="aia-compat-api-min-version"
+519-->[com.google.android.instantapps:instantapps:1.1.0] /Users/sypsys/.gradle/caches/transforms-3/0071b2930d1ef1b7aa23968660d626df/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:11:13-54
+520            android:value="1" />
+520-->[com.google.android.instantapps:instantapps:1.1.0] /Users/sypsys/.gradle/caches/transforms-3/0071b2930d1ef1b7aa23968660d626df/transformed/jetified-instantapps-1.1.0/AndroidManifest.xml:12:13-30
+521    </application>
+522
+523</manifest>

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1089637168277",
+    "project_id": "pickupjob-f5bab",
+    "storage_bucket": "pickupjob-f5bab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089637168277:android:2aa955de5ce8d71bc4979c",
+        "android_client_info": {
+          "package_name": "pickupjob.gobizgrow.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089637168277-omv0nlrepel91n5rieb6omi2vcleev1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pickupjob.gobizgrow.com",
+            "certificate_hash": "93368f185132233c39fe6d68d36498a826687e79"
+          }
+        },
+        {
+          "client_id": "1089637168277-toei7ti9j3t0ge7gd1d8et9ni035b6eo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByoqLAnSuFnqjhtq0iPbgpYock9IEjbzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089637168277-toei7ti9j3t0ge7gd1d8et9ni035b6eo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1089637168277-re5ec07scppb3jcvrjs6rlj7ael4e1cq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "pickupjob.gobizgrow.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

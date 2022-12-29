@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-vision-common:19.1.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/277d860c4bbd4092eedf906643ca4b9e/transformed/jetified-play-services-vision-common-19.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c32a0c1e123837596f6244745a60ba5/transformed/jetified-play-services-vision-common-19.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c30a646ef49dc5b660eebaa34d66856d/transformed/jetified-play-services-vision-common-19.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c30a646ef49dc5b660eebaa34d66856d/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c30a646ef49dc5b660eebaa34d66856d/transformed/jetified-play-services-vision-common-19.1.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/acbc45d422c5775a6f35efd014c37662/transformed/jetified-play-services-vision-common-19.1.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ac03d9da5b738a4941d9f0b0a517777a/transformed/jetified-play-services-vision-common-19.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ac03d9da5b738a4941d9f0b0a517777a/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/74a390f306a3f4691467ccb3461a58e9/transformed/jetified-play-services-vision-common-19.1.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/74a390f306a3f4691467ccb3461a58e9/transformed/jetified-play-services-vision-common-19.1.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-vision-common/19.1.3/9fc4e0085d07195251e6ab76e780d96d39681f3/play-services-vision-common-19.1.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

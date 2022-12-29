@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "pickupjob.gobizgrow.com.app-mergeDebugResources-86:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "/Users/sypsys/.gradle/caches/transforms-3/660039f16fca68b8302cf3516c1bd93d/transformed/appcompat-1.5.1/res/values-watch-v21/values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

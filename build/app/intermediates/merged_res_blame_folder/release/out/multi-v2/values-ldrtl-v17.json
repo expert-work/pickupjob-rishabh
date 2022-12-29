@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "pickupjob.gobizgrow.com.app-mergeReleaseResources-86:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "/Users/sypsys/.gradle/caches/transforms-3/f5feef6303521990de153e7209bfe7ef/transformed/material-1.6.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}
