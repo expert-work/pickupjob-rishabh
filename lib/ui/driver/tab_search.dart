@@ -47,8 +47,8 @@ class _TabSearchDriverState extends State<TabSearchDriver> {
                       init: Get.put<PickUpJobController>(PickUpJobController()),
                       builder: (PickUpJobController pickUpJobController) {
                         return Container(
-                          padding: EdgeInsets.only(left: 15, right: 15),
-                          decoration: BoxDecoration(
+                          padding: const EdgeInsets.only(left: 15, right: 15),
+                          decoration: const BoxDecoration(
                             color: Colors.black87,
                           ),
                           height: MediaQuery.of(context).size.height,
@@ -61,9 +61,9 @@ class _TabSearchDriverState extends State<TabSearchDriver> {
                               final pickupjobData =
                                   pickUpJobController.pickupSearchjobs[index];
                               return Container(
-                                  margin: EdgeInsets.only(bottom: 20),
+                                  margin: const EdgeInsets.only(bottom: 20),
                                   // padding: EdgeInsets.all(15),
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.black26,
                                     // borderRadius: BorderRadius.circular(4),
 
@@ -75,178 +75,224 @@ class _TabSearchDriverState extends State<TabSearchDriver> {
                                     ),
                                   ),
                                   child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: [
+                                      const SizedBox(
+                                        height: 5.0,
+                                      ),
+                                      // Row for the Job Name and the view job button.
+                                      Text(
+                                        'Created on ${DateFormat('dd-MM-yyyy').format(pickupjobData.createdon!).replaceAll('-', '/')} | ${CommonHelper.calculateDistance(pickupjobData.pickLat, pickupjobData.pickLan, pickupjobData.dropLat, pickupjobData.dropLan).toStringAsFixed(2)} KM away',
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                            color: Colors.white),
+                                      ),
                                       Row(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(
-                                            pickupjobData.title.toString(),
-                                            style: TextStyle(
-                                                fontSize: 18,
-                                                fontWeight: FontWeight.w500,
-                                                color: Colors.white),
+                                          Expanded(
+                                            child: Text(
+                                              pickupjobData.title.toString(),
+                                              maxLines: 2,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: const TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.w500,
+                                                  color: Colors.white),
+                                            ),
                                           ),
-                                          Row(
-                                            children: [
-                                              IconButton(
-                                                  icon: const Icon(
-                                                    Icons.remove_red_eye,
-                                                    color: Colors.white,
-                                                  ),
-                                                  onPressed: () {
-                                                    Get.to(
-                                                        () => ViewJobDriver(),
-                                                        arguments: {
-                                                          'id':
-                                                              pickupjobData.id,
-                                                          'uid':
-                                                              pickupjobData.uid,
-                                                          'uname': pickupjobData
-                                                              .uname,
-                                                          'title': pickupjobData
-                                                              .title,
-                                                          'inputMethod':
-                                                              pickupjobData
-                                                                  .inputMethod,
-                                                          'barCodeItemNumber':
-                                                              pickupjobData
-                                                                  .barCodeItemNumber,
-                                                          'barCodeItem':
-                                                              pickupjobData
-                                                                  .barCodeItem,
-                                                          'weight':
-                                                              pickupjobData
-                                                                  .weight,
-                                                          'length':
-                                                              pickupjobData
-                                                                  .length,
-                                                          'height':
-                                                              pickupjobData
-                                                                  .height,
-                                                          'numberOfItem':
-                                                              pickupjobData
-                                                                  .numberOfItem,
-                                                          'itemImage':
-                                                              pickupjobData
-                                                                  .itemImage,
-                                                          'needLoadUnload':
-                                                              pickupjobData
-                                                                  .needLoadUnload,
-                                                          'needLoadUnloadTime':
-                                                              pickupjobData
-                                                                  .needLoadUnloadTime,
+                                          IconButton(
+                                              icon: const Icon(
+                                                Icons.arrow_forward,
+                                                color: Colors.white,
+                                              ),
+                                              onPressed: () {
+                                                Get.to(
+                                                    () => const ViewJobDriver(),
+                                                    arguments: {
+                                                      'id': pickupjobData.id,
+                                                      'uid': pickupjobData.uid,
+                                                      'uname':
+                                                          pickupjobData.uname,
+                                                      'title':
+                                                          pickupjobData.title,
+                                                      'inputMethod':
+                                                          pickupjobData
+                                                              .inputMethod,
+                                                      'barCodeItemNumber':
+                                                          pickupjobData
+                                                              .barCodeItemNumber,
+                                                      'barCodeItem':
+                                                          pickupjobData
+                                                              .barCodeItem,
+                                                      'weight':
+                                                          pickupjobData.weight,
+                                                      'length':
+                                                          pickupjobData.length,
+                                                      'height':
+                                                          pickupjobData.height,
+                                                      'numberOfItem':
+                                                          pickupjobData
+                                                              .numberOfItem,
+                                                      'itemImage': pickupjobData
+                                                          .itemImage,
+                                                      'needLoadUnload':
+                                                          pickupjobData
+                                                              .needLoadUnload,
+                                                      'needLoadUnloadTime':
+                                                          pickupjobData
+                                                              .needLoadUnloadTime,
 
 //pick Addreess
 
-                                                          'pickLat':
-                                                              pickupjobData
-                                                                  .pickLat,
-                                                          'pickLan':
-                                                              pickupjobData
-                                                                  .pickLan,
-                                                          'pickAddress':
-                                                              pickupjobData
-                                                                  .pickAddress,
-                                                          'pickState':
-                                                              pickupjobData
-                                                                  .pickState,
-                                                          'pickCity':
-                                                              pickupjobData
-                                                                  .pickCity,
-                                                          'pickZip':
-                                                              pickupjobData
-                                                                  .pickZip,
+                                                      'pickLat':
+                                                          pickupjobData.pickLat,
+                                                      'pickLan':
+                                                          pickupjobData.pickLan,
+                                                      'pickAddress':
+                                                          pickupjobData
+                                                              .pickAddress,
+                                                      'pickState': pickupjobData
+                                                          .pickState,
+                                                      'pickCity': pickupjobData
+                                                          .pickCity,
+                                                      'pickZip':
+                                                          pickupjobData.pickZip,
 
 //drop
-                                                          'dropLat':
-                                                              pickupjobData
-                                                                  .dropLat,
-                                                          'dropLan':
-                                                              pickupjobData
-                                                                  .dropLan,
-                                                          'dropAddress':
-                                                              pickupjobData
-                                                                  .dropAddress,
-                                                          'dropState':
-                                                              pickupjobData
-                                                                  .dropState,
-                                                          'dropCity':
-                                                              pickupjobData
-                                                                  .dropCity,
-                                                          'dropZip':
-                                                              pickupjobData
-                                                                  .dropZip,
+                                                      'dropLat':
+                                                          pickupjobData.dropLat,
+                                                      'dropLan':
+                                                          pickupjobData.dropLan,
+                                                      'dropAddress':
+                                                          pickupjobData
+                                                              .dropAddress,
+                                                      'dropState': pickupjobData
+                                                          .dropState,
+                                                      'dropCity': pickupjobData
+                                                          .dropCity,
+                                                      'dropZip':
+                                                          pickupjobData.dropZip,
 
 //Contact Person
-                                                          'contactPersonName':
-                                                              pickupjobData
-                                                                  .contactPersonName,
-                                                          'contactPersonMobile':
-                                                              pickupjobData
-                                                                  .contactPersonMobile,
-                                                          'contactPersonAlternateMobile':
-                                                              pickupjobData
-                                                                  .contactPersonAlternateMobile,
-                                                          'dateForPickup':
-                                                              pickupjobData
-                                                                  .dateForPickup,
-                                                          'timeForPickupLoad':
-                                                              pickupjobData
-                                                                  .timeForPickupLoad,
-                                                          'isAutoBid':
-                                                              pickupjobData
-                                                                  .isAutoBid,
-                                                          'autoBidStartDateTime':
-                                                              pickupjobData
-                                                                  .autoBidStartDateTime,
-                                                          'createdon':
-                                                              pickupjobData
-                                                                  .createdon,
-                                                          'isDone':
-                                                              pickupjobData
-                                                                  .isDone,
-                                                          'status':
-                                                              pickupjobData
-                                                                  .status,
-                                                        });
+                                                      'contactPersonName':
+                                                          pickupjobData
+                                                              .contactPersonName,
+                                                      'contactPersonMobile':
+                                                          pickupjobData
+                                                              .contactPersonMobile,
+                                                      'contactPersonAlternateMobile':
+                                                          pickupjobData
+                                                              .contactPersonAlternateMobile,
+                                                      'dateForPickup':
+                                                          pickupjobData
+                                                              .dateForPickup,
+                                                      'timeForPickupLoad':
+                                                          pickupjobData
+                                                              .timeForPickupLoad,
+                                                      'isAutoBid': pickupjobData
+                                                          .isAutoBid,
+                                                      'autoBidStartDateTime':
+                                                          pickupjobData
+                                                              .autoBidStartDateTime,
+                                                      'createdon': pickupjobData
+                                                          .createdon,
+                                                      'isDone':
+                                                          pickupjobData.isDone,
+                                                      'status':
+                                                          pickupjobData.status,
+                                                    });
 
-                                                    //Get.to(addVehicle());
-                                                  }),
-                                            ],
-                                          ),
+                                                //Get.to(addVehicle());
+                                              }),
                                         ],
                                       ),
+                                      // Job date and Distance row -->
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Wrap(
+                                            children: [
+                                              const Text('Job Date: '),
+                                              Text(
+                                                DateFormat('dd-yyyy')
+                                                    .format(pickupjobData
+                                                        .createdon!)
+                                                    .replaceAll('-', '/'),
+                                                maxLines: 2,
+                                                overflow: TextOverflow.ellipsis,
+                                                style: const TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ],
+                                          ),
+                                          Wrap(
+                                            children: [
+                                              const Text('Total Distance:'),
+                                              Text(
+                                                ' ${CommonHelper.calculateDistance(pickupjobData.pickLat, pickupjobData.pickLan, pickupjobData.dropLat, pickupjobData.dropLan).toStringAsFixed(2)} KM',
+                                                style: const TextStyle(
+                                                    color: Colors.white),
+                                              )
+                                            ],
+                                          )
+                                        ],
+                                      ),
+                                      // Job Price Text -->
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            vertical: 5.0),
+                                        child: Wrap(
+                                          children: const [
+                                            Text('Price: '),
+                                            Text(
+                                              '\$0.00',
+                                              style: TextStyle(
+                                                  color: Colors.green,
+                                                  fontWeight: FontWeight.w500),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      // Column for the Product Details -->
                                       Row(
                                           mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
+                                              MainAxisAlignment.start,
                                           crossAxisAlignment:
-                                              CrossAxisAlignment.start,
+                                              CrossAxisAlignment.center,
                                           children: [
+                                            // Image Container -->
                                             Container(
-                                                margin: EdgeInsets.only(
-                                                    top: 10, bottom: 10),
-                                                padding: EdgeInsets.all(10),
+                                                margin:
+                                                    const EdgeInsets.symmetric(
+                                                        vertical: 10.0),
                                                 decoration: BoxDecoration(
                                                     color: Colors.white,
                                                     border: Border.all(
-                                                        color: Color.fromARGB(
-                                                            24,
-                                                            255,
-                                                            255,
-                                                            255))),
-                                                height: MediaQuery.of(context)
+                                                        color:
+                                                            const Color.fromARGB(
+                                                                24,
+                                                                255,
+                                                                255,
+                                                                255))),
+                                                height: MediaQuery
+                                                            .of(context)
                                                         .size
                                                         .height /
-                                                    5,
+                                                    6.5,
                                                 width: MediaQuery.of(context)
                                                         .size
                                                         .width /
-                                                    2,
+                                                    3.0,
                                                 child: Image.network(
                                                   pickupjobData.itemImage
                                                       .toString(),
+                                                  fit: BoxFit.cover,
                                                   loadingBuilder:
                                                       (BuildContext context,
                                                           Widget child,
@@ -269,36 +315,36 @@ class _TabSearchDriverState extends State<TabSearchDriver> {
                                                     );
                                                   },
                                                 )),
-                                            Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Container(
-                                                    padding: EdgeInsets.only(
-                                                        left: 15, top: 15),
-                                                    child: Text(pickupjobData
-                                                        .barCodeItem
-                                                        .toString())),
-                                                Container(
-                                                    padding: EdgeInsets.only(
-                                                        left: 15, top: 5),
-                                                    child: Text(DateFormat(
-                                                            'yyyy-MM-dd – kk:mm')
-                                                        .format(pickupjobData
-                                                            .createdon!))),
-                                                Container(
-                                                  padding: EdgeInsets.only(
-                                                      left: 15, top: 10),
-                                                  child: Text(
-                                                    " Height: " +
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 15.0),
+                                              child: Column(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Wrap(
+                                                    children: [
+                                                      const Text(
+                                                          'Total Items: '),
+                                                      Text(
+                                                        '${pickupjobData.barCodeItemNumber.toString()} Items',
+                                                        style: const TextStyle(
+                                                            color:
+                                                                Colors.white),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  const Text('Item info:'),
+                                                  Text(
+                                                    "Height: " +
                                                         pickupjobData.height
                                                             .toString() +
                                                         ' Feet \n' +
-                                                        " Weight: " +
+                                                        "Weight: " +
                                                         pickupjobData.weight
                                                             .toString() +
                                                         ' Pound \n' +
-                                                        " Length: " +
+                                                        "Length: " +
                                                         pickupjobData.length
                                                             .toString() +
                                                         ' Feet',
@@ -306,24 +352,8 @@ class _TabSearchDriverState extends State<TabSearchDriver> {
                                                         color: Colors.white,
                                                         fontSize: 12),
                                                   ),
-                                                ),
-                                                Container(
-                                                    padding: EdgeInsets.only(
-                                                        left: 15, top: 10),
-                                                    child: Text(CommonHelper
-                                                                .calculateDistance(
-                                                                    pickupjobData
-                                                                        .pickLat,
-                                                                    pickupjobData
-                                                                        .pickLan,
-                                                                    pickupjobData
-                                                                        .dropLat,
-                                                                    pickupjobData
-                                                                        .dropLan)
-                                                            .toStringAsFixed(
-                                                                2) +
-                                                        ' KM')),
-                                              ],
+                                                ],
+                                              ),
                                             )
                                           ]),
                                     ],

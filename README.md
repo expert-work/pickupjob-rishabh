@@ -190,3 +190,32 @@ background Location :
 
 flutter pub add geo_firestore_flutter
 https://pub.dev/packages/geo_firestore_flutter/install
+
+
+
+
+Payment Sytems 
+-----------------
+-------------------------
+
+Add Card 
+
+When user Add card We just need to save in firebase 
+
+When need to pay 
+
+
+Card Details 
+
+ 
+user_id
+name_on_card
+card_number
+expiry_date
+is_default
+updatedon
+createdon
+
+//////T
+Transctions 
+

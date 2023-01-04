@@ -152,16 +152,16 @@ class _inProgressJobsStepsUserState extends State<inProgressJobsStepsUser> {
           iconTheme: const IconThemeData(color: Colors.white),
           backgroundColor: Colors.black87,
           title: Text(pickUpJobModel.title.toString()),
-          actions: [
-            IconButton(
-                icon: Icon(
-                  Icons.logout,
-                  color: Colors.white,
-                ),
-                onPressed: () {
-                  AuthController.to.signOut();
-                }),
-          ],
+         // actions: [
+           // IconButton(
+             //   icon: Icon(
+               //   Icons.logout,
+                 // color: Colors.white,
+                //),
+                //onPressed: () {
+                //  AuthController.to.signOut();
+                //}),
+          //],
         ),
         body: Container(
           child: ListView(

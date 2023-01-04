@@ -350,16 +350,16 @@ class _editPickupJobsState extends State<editPickupJobs> {
                   iconTheme: const IconThemeData(color: Colors.white),
                   backgroundColor: Colors.black87,
                   title: Text(pageTitle),
-                  actions: [
-                    IconButton(
-                        icon: Icon(
-                          Icons.logout,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          AuthController.to.signOut();
-                        }),
-                  ],
+                  // actions: [
+                  //   IconButton(
+                  //       icon: Icon(
+                  //         Icons.logout,
+                  //         color: Colors.white,
+                  //       ),
+                  //       onPressed: () {
+                  //         AuthController.to.signOut();
+                  //       }),
+                  // ],
                 ),
                 floatingActionButtonLocation:
                     FloatingActionButtonLocation.endFloat,
@@ -702,7 +702,7 @@ class _editPickupJobsState extends State<editPickupJobs> {
                 children: [
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.all(10),
                       margin: EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -727,7 +727,7 @@ class _editPickupJobsState extends State<editPickupJobs> {
                   ),
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.all(10),
                       margin: EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(

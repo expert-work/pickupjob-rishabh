@@ -76,6 +76,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
   TextEditingController contactPersonMobileController = TextEditingController();
   TextEditingController contactPersonAlternateMobileController =
       TextEditingController();
+
   DateTime? currentTime = DateTime.now();
   int _screenIndex = 0;
   String pageTitle = "New Job";
@@ -169,7 +170,18 @@ class _addPickupJobsState extends State<addPickupJobs> {
     ableToTransportData();
     getStatesData();
     getLocation();
+    // Getting user Information function -->
+    getUserInfo();
     super.initState();
+  }
+
+  // Getting User Information Information -->
+  getUserInfo() {
+    UserModel userInfo = Get.find<AuthController>().firestoreUser.value!;
+    contactPersonNameController.text = userInfo.name;
+    contactPersonMobileController.text = userInfo.phoneNumber.toString();
+    contactPersonAlternateMobileController.text =
+        userInfo.phoneNumber.toString();
   }
 
   getStatesData() async {
@@ -204,6 +216,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
       });
     });
 
+    dropCitiesList = dropCitiesList.toSet().toList();
     setState(() {
       dropCitiesList = dropCitiesList;
     });
@@ -221,6 +234,8 @@ class _addPickupJobsState extends State<addPickupJobs> {
         pickCitiesList.add(doc["city"]);
       });
     });
+
+    pickCitiesList = pickCitiesList.toSet().toList();
 
     setState(() {
       pickCitiesList = pickCitiesList;
@@ -393,16 +408,16 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   iconTheme: const IconThemeData(color: Colors.white),
                   backgroundColor: Colors.black87,
                   title: Text(pageTitle),
-                  actions: [
-                    IconButton(
-                        icon: Icon(
-                          Icons.logout,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          AuthController.to.signOut();
-                        }),
-                  ],
+                  // actions: [
+                  //   IconButton(
+                  //       icon: Icon(
+                  //         Icons.logout,
+                  //         color: Colors.white,
+                  //       ),
+                  //       onPressed: () {
+                  //         AuthController.to.signOut();
+                  //       }),
+                  // ],
                 ),
                 floatingActionButtonLocation:
                     FloatingActionButtonLocation.endFloat,
@@ -426,43 +441,42 @@ class _addPickupJobsState extends State<addPickupJobs> {
           //return pickupLocation(context, firestoreUser);
 
           return pickupInputMethod(context, firestoreUser);
-          break;
         }
 
       case 1:
         {
           return pickupJobInfo(context, firestoreUser);
-          break;
         }
       case 2:
         {
           return pickupLocation(context, firestoreUser);
-          break;
         }
       case 3:
         {
           return dropLocation(context, firestoreUser);
-          break;
         }
       case 4:
         {
           return confirmLocation(context, firestoreUser);
-          break;
         }
       case 5:
         {
           return contactPersonDetails(context, firestoreUser);
-          break;
         }
       case 6:
         {
           return dateAndTime(context, firestoreUser);
-          break;
+        }
+
+      // Additional Code -->
+      case 7:
+        {
+          return reviewDetails(context, firestoreUser);
         }
 
       default:
         {
-          return Text("data");
+          return const Text("data");
         }
     }
   }
@@ -478,14 +492,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
             children: [
               InkWell(
                 child: Container(
-                  padding: EdgeInsets.all(30),
-                  margin: EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(30),
+                  margin: const EdgeInsets.all(30),
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: (inputMethod == 'input')
                           ? Colors.green
                           : Colors.white),
-                  child: Center(
+                  child: const Center(
                       child: Text(
                     "Input My Order",
                     style: TextStyle(
@@ -505,14 +519,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
               ),
               InkWell(
                 child: Container(
-                  padding: EdgeInsets.all(30),
-                  margin: EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(30),
+                  margin: const EdgeInsets.all(30),
                   width: double.infinity,
                   decoration: BoxDecoration(
                       color: (inputMethod == 'barcode')
                           ? Colors.green
                           : Colors.white),
-                  child: Center(
+                  child: const Center(
                       child: Text(
                     "Bar Scan Delivery",
                     style: TextStyle(
@@ -538,16 +552,16 @@ class _addPickupJobsState extends State<addPickupJobs> {
   Widget pickupJobInfo(BuildContext context, firestoreUser) {
     return Stack(
       children: [
-        Container(
+        SizedBox(
           height: (MediaQuery.of(context).size.height - 60),
           child: ListView(
             padding: const EdgeInsets.all(30),
             children: <Widget>[
               TextField(
                 controller: titleController,
-                style: TextStyle(color: Colors.white, fontSize: 20.0),
+                style: const TextStyle(color: Colors.white, fontSize: 20.0),
                 //or null
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   fillColor: Colors.white,
                   labelText: 'Job Title',
                   labelStyle: TextStyle(
@@ -558,7 +572,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   ),
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
               TextField(
@@ -576,11 +590,11 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   ),
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
               DropdownButtonFormField(
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   fillColor: Colors.white,
                   labelText: 'Item Type',
                   labelStyle: TextStyle(
@@ -619,23 +633,24 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   );
                 }).toList(),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
-              Container(
+              SizedBox(
                 height: 60,
                 child: Row(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Container(
+                      SizedBox(
                         width: MediaQuery.of(context).size.width / 3 - 20,
                         child: TextField(
                           controller: weightController,
                           keyboardType: TextInputType.number,
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 20.0),
                           //or null
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             fillColor: Colors.white,
                             labelText: 'Weight (Pound)',
                             labelStyle: TextStyle(
@@ -647,14 +662,15 @@ class _addPickupJobsState extends State<addPickupJobs> {
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: MediaQuery.of(context).size.width / 3 - 20,
                         child: TextField(
                           controller: lengthController,
                           keyboardType: TextInputType.number,
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 20.0),
                           //or null
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             fillColor: Colors.white,
                             labelText: 'Length (Feet)',
                             labelStyle: TextStyle(
@@ -666,14 +682,15 @@ class _addPickupJobsState extends State<addPickupJobs> {
                           ),
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: MediaQuery.of(context).size.width / 3 - 20,
                         child: TextField(
                           controller: heightController,
                           keyboardType: TextInputType.number,
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 20.0),
                           //or null
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             fillColor: Colors.white,
                             labelText: 'Height (Feet)',
                             labelStyle: TextStyle(
@@ -687,21 +704,21 @@ class _addPickupJobsState extends State<addPickupJobs> {
                       ),
                     ]),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
               TextField(
                 controller: numberOfItemController,
                 keyboardType: TextInputType.number,
-                style: TextStyle(color: Colors.white, fontSize: 20.0),
+                style: const TextStyle(color: Colors.white, fontSize: 20.0),
                 //or null
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   fillColor: Colors.white,
                   labelText: 'Number Of Items',
                   labelStyle: TextStyle(
@@ -712,18 +729,18 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   ),
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.only(top: 20, bottom: 10),
-                child: Text(
+                padding: const EdgeInsets.only(top: 20, bottom: 10),
+                child: const Text(
                   'To View/Take a pic of Item',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
-              Container(
+              SizedBox(
                 child: InkWell(
                   child: Image.network(
                     (itemImage == '')
@@ -752,13 +769,13 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   },
                 ),
               ),
-              Divider(
+              const Divider(
                 height: 24,
               ),
               Container(
                 width: double.infinity,
-                padding: EdgeInsets.only(top: 20, bottom: 10),
-                child: Text(
+                padding: const EdgeInsets.only(top: 20, bottom: 10),
+                child: const Text(
                   'Do you need help to load/unload? (A charge of  USD 1 Per minute. 10 min minimum )',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
@@ -769,14 +786,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 children: [
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
-                      margin: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
+                      margin: const EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(
                           color: (needLoadUnload == 'Yes')
                               ? Colors.green
                               : Colors.white),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "Yes",
                         style: TextStyle(
@@ -794,14 +811,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   ),
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
-                      margin: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
+                      margin: const EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(
                           color: (needLoadUnload == 'No')
                               ? Colors.green
                               : Colors.white),
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         "No",
                         style: TextStyle(
@@ -817,7 +834,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
                       setState(() {});
                     },
                   ),
-                  Divider(
+                  const Divider(
                     height: 20,
                   ),
                   (needLoadUnload == 'Yes')
@@ -825,9 +842,10 @@ class _addPickupJobsState extends State<addPickupJobs> {
                           controller: needLoadUnloadTimeController,
                           keyboardType: TextInputType.number,
 
-                          style: TextStyle(color: Colors.white, fontSize: 20.0),
+                          style: const TextStyle(
+                              color: Colors.white, fontSize: 20.0),
                           //or null
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             fillColor: Colors.white,
                             labelText: 'How Much time you need?',
                             labelStyle: TextStyle(
@@ -839,7 +857,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
                           ),
                         )
                       : Container(),
-                  Divider(
+                  const Divider(
                     height: 80,
                   ),
                 ],
@@ -948,19 +966,19 @@ class _addPickupJobsState extends State<addPickupJobs> {
 
   Widget pickupLocation(BuildContext context, firestoreUser) {
     return Stack(children: [
-      Container(
+      SizedBox(
           height: (MediaQuery.of(context).size.height - 60),
           child: ListView(padding: const EdgeInsets.all(30), children: <Widget>[
             getMapArea(context, 'pick'),
-            Divider(
+            const Divider(
               height: 20,
             ),
             TextField(
               maxLines: 3, //or null
               controller: pickAddressController,
-              style: TextStyle(color: Colors.white, fontSize: 20.0),
+              style: const TextStyle(color: Colors.white, fontSize: 20.0),
               //or null
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'Address',
                 labelStyle: TextStyle(
@@ -971,11 +989,11 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             DropdownButtonFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'State',
                 labelStyle: TextStyle(
@@ -993,10 +1011,10 @@ class _addPickupJobsState extends State<addPickupJobs> {
 
               icon: const Icon(Icons.arrow_downward),
               elevation: 12,
-              style: TextStyle(color: Colors.grey, fontSize: 15),
+              style: const TextStyle(color: Colors.grey, fontSize: 15),
               hint: pickState != null
                   ? null
-                  : Text(
+                  : const Text(
                       'State',
                       style: TextStyle(color: Colors.black),
                     ),
@@ -1015,11 +1033,11 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 );
               }).toList(),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             DropdownButtonFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'City',
                 labelStyle: TextStyle(
@@ -1037,10 +1055,10 @@ class _addPickupJobsState extends State<addPickupJobs> {
 
               icon: const Icon(Icons.arrow_downward),
               elevation: 12,
-              style: TextStyle(color: Colors.grey, fontSize: 15),
+              style: const TextStyle(color: Colors.grey, fontSize: 15),
               hint: pickCity != null
                   ? null
-                  : Text(
+                  : const Text(
                       'City',
                       style: TextStyle(color: Colors.black),
                     ),
@@ -1058,14 +1076,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 );
               }).toList(),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             TextField(
               controller: pickZipController,
-              style: TextStyle(color: Colors.white, fontSize: 20.0),
+              style: const TextStyle(color: Colors.white, fontSize: 20.0),
               //or null
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'Zip',
                 labelStyle: TextStyle(
@@ -1076,7 +1094,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
           ])),
@@ -1544,14 +1562,14 @@ class _addPickupJobsState extends State<addPickupJobs> {
 
   Widget contactPersonDetails(BuildContext context, firestoreUser) {
     return Stack(children: [
-      Container(
+      SizedBox(
           height: (MediaQuery.of(context).size.height - 60),
           child: ListView(padding: const EdgeInsets.all(30), children: <Widget>[
             TextField(
               controller: contactPersonNameController,
-              style: TextStyle(color: Colors.white, fontSize: 20.0),
+              style: const TextStyle(color: Colors.white, fontSize: 20.0),
               //or null
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'Contact Person Name',
                 labelStyle: TextStyle(
@@ -1562,7 +1580,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             TextField(
@@ -1717,7 +1735,7 @@ class _addPickupJobsState extends State<addPickupJobs> {
             ),
             TextButton(
                 onPressed: () {
-                  DatePicker.showTimePicker(context, showTitleActions: true,
+                  DatePicker.showTime12hPicker(context, showTitleActions: true,
                       onChanged: (date) {
                     print('change $date in time zone ' +
                         date.timeZoneOffset.inHours.toString());
@@ -1731,32 +1749,32 @@ class _addPickupJobsState extends State<addPickupJobs> {
                   }, currentTime: DateTime.now());
                 },
                 child: Container(
-                  padding: EdgeInsets.all(15),
+                  padding: const EdgeInsets.all(15),
                   width: double.infinity,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                      borderRadius: const BorderRadius.all(Radius.circular(10)),
                       border: Border.all(color: Colors.white, width: 1)),
-                  child: Text(
+                  child: const Text(
                     'When to Deliver (Time Pickup Load)',
                     style: TextStyle(
                         color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 )),
-            Divider(
+            const Divider(
               height: 20,
             ),
             Center(
                 child: Text(
               DateFormat('kk:mm').format(timeForPickupLoad),
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 24,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             )),
-            Divider(
+            const Divider(
               height: 60,
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             Row(children: [
@@ -1828,6 +1846,391 @@ class _addPickupJobsState extends State<addPickupJobs> {
             Divider(
               height: 20,
             ),
+          ])),
+      Positioned(
+        bottom: 0,
+        child: Row(children: [
+          Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width / 2,
+              decoration: BoxDecoration(
+                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                ),
+                onPressed: () async {
+                  setState(() {
+                    _screenIndex = 5;
+                    pageTitle = 'Contact Person Detail';
+                  });
+                },
+                child: const Text(
+                  'Previous ',
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+              )),
+          Container(
+              height: 60,
+              width: MediaQuery.of(context).size.width / 2,
+              decoration: BoxDecoration(
+                  color: Colors.black, borderRadius: BorderRadius.circular(20)),
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                ),
+                onPressed: () async {
+                  // PickUpJobModel job = PickUpJobModel(
+                  //   uid: firestoreUser.value!.uid,
+                  //   uname: firestoreUser.value!.name,
+                  //   title: title,
+                  //   inputMethod: inputMethod,
+                  //   barCodeItemNumber: barCodeItemNumber,
+                  //   barCodeItem: barCodeItem,
+                  //   weight: weight,
+                  //   length: length,
+                  //   height: height,
+                  //   numberOfItem: numberOfItem,
+                  //   itemImage: itemImage,
+                  //   needLoadUnload: needLoadUnload,
+                  //   needLoadUnloadTime: needLoadUnloadTime,
+                  //   pickLat: pickLat,
+                  //   pickLan: pickLan,
+                  //   pickAddress: pickAddress,
+                  //   pickState: pickState,
+                  //   pickCity: pickCity,
+                  //   pickZip: pickZip,
+                  //   dropLat: dropLat,
+                  //   dropLan: dropLan,
+                  //   dropAddress: dropAddress,
+                  //   dropState: dropState,
+                  //   dropCity: dropCity,
+                  //   dropZip: dropZip,
+                  //   contactPersonName: contactPersonName,
+                  //   contactPersonMobile: contactPersonMobile,
+                  //   contactPersonAlternateMobile: contactPersonAlternateMobile,
+                  //   dateForPickup: dateForPickup,
+                  //   timeForPickupLoad: timeForPickupLoad,
+                  //   isAutoBid: isAutoBid,
+                  //   autoBidStartDateTime: autoBidStartDateTime,
+                  //   createdon: DateTime.now(),
+                  //   isDone: false,
+                  //   status: 'Open',
+                  //   amount: 0,
+                  //   bid_id: "",
+                  //   driver_id: "",
+                  //   driver_name: "",
+                  //   vehicle_id: "",
+                  //   vehicle_name: "",
+                  //   // after pickup start
+
+                  //   driver_on_way_to_pickup: "",
+                  //   driver_at_pickup_location: "",
+                  //   user_picture_of_driver_with_driver_id: "",
+                  //   driver_image_of_pickup_job: "",
+                  //   driver_image_of_pickup_job_on_truck: "",
+                  //   driver_confirm_pickup_job: "",
+                  //   user_confirm_pickup_job: "",
+                  //   driver_at_drop_off_loaction: "",
+                  //   driver_pickupjob_delivered: "",
+                  //   user_release_payment: "",
+                  //   rating_to_driver: "",
+                  //   rating_to_user: "",
+                  //   review_for_customer: "",
+                  //   review_for_user: "",
+                  // );
+
+                  // print(job);
+                  // showLoadingIndicator();
+                  // await FirestoreDb.addPickupJobs(job);
+                  // hideLoadingIndicator();
+                  // Get.offAll(userHome());
+
+                  setState(() {
+                    _screenIndex = 7;
+                    pageTitle = 'Review Details';
+                  });
+                },
+                child: const Text(
+                  'Next',
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
+              ))
+        ]),
+      )
+    ]);
+  }
+
+  Widget getMapArea(BuildContext context, locationType) {
+    return Container(
+        padding: const EdgeInsets.all(15),
+        color: Colors.white,
+        height: 300,
+        child: ListView(children: <Widget>[
+          (locationType == 'pick')
+              ? TextField(
+                  controller: _pickSearchController,
+                  decoration: const InputDecoration(
+                    labelText: "Search",
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                        width: 2.0,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black54,
+                        width: 2.0,
+                      ),
+                    ),
+                  ),
+                  onChanged: (value) {
+                    if (value.isNotEmpty) {
+                      autoCompleteSearch(value);
+                    } else {
+                      if (predictions.length > 0 && mounted) {
+                        setState(() {
+                          predictions = [];
+                        });
+                      }
+                    }
+                  },
+                )
+              : TextField(
+                  controller: _dropSearchController,
+                  decoration: const InputDecoration(
+                    labelText: "Search",
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.white,
+                        width: 2.0,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black54,
+                        width: 2.0,
+                      ),
+                    ),
+                  ),
+                  onChanged: (value) {
+                    if (value.isNotEmpty) {
+                      autoCompleteSearch(value);
+                    } else {
+                      if (predictions.length > 0 && mounted) {
+                        setState(() {
+                          predictions = [];
+                        });
+                      }
+                    }
+                  },
+                ),
+          const SizedBox(
+            height: 10,
+          ),
+          SizedBox(
+            height: (predictions.length > 0) ? 200 : 0,
+            child: ListView.builder(
+              itemCount: predictions.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: const CircleAvatar(
+                    child: Icon(
+                      Icons.pin_drop,
+                      color: Colors.white,
+                    ),
+                  ),
+                  title: Text(predictions[index].description.toString()),
+                  onTap: () async {
+                    print(predictions[index].description);
+                    debugPrint(predictions[index].placeId);
+
+                    var result = await this
+                        .googlePlace
+                        .details
+                        .get(predictions[index].placeId.toString());
+
+                    // if (result != null && result.result != null && mounted) {
+                    print("result detail Start " + locationType);
+                    print(result?.result!.addressComponents);
+
+                    var address = predictions[index].description;
+
+                    double? latitude = result?.result!.geometry?.location?.lat;
+                    double? longitude = result?.result!.geometry?.location?.lng;
+
+                    setLocations(latitude!, longitude!, address, locationType);
+                    //  }
+
+                    setState(() {
+                      if (locationType == 'pick') {
+                        _pickSearchController.text =
+                            predictions[index].description!;
+                      } else {
+                        _dropSearchController.text =
+                            predictions[index].description!;
+                      }
+                      predictions = [];
+                    });
+                    setState(() {});
+                  },
+                );
+              },
+            ),
+          ),
+          SizedBox(
+              height: 200,
+              child: (locationType == 'pick')
+                  ? GoogleMap(
+                      key: pickMapKey,
+                      onTap: (latLng) async {
+                        placemarks = await placemarkFromCoordinates(
+                            latLng.latitude, latLng.longitude);
+
+                        setLocations(latLng.latitude, latLng.longitude,
+                            placemarks[0].name, 'pick');
+
+                        print(placemarks[0]);
+
+                        print("hjhhjhjhjjhP");
+                      },
+                      initialCameraPosition: currentPickPosition,
+                      onMapCreated: (pickController) {
+                        print("pick map created start");
+                        print(pickLat);
+                        print(pickLan);
+                        print("pick map created");
+                        //method called when map is created
+                        setState(() {
+                          pickMapController = pickController;
+                        });
+                      },
+                    )
+                  : GoogleMap(
+                      key: dropMapKey,
+                      onTap: (latLng) async {
+                        placemarks = await placemarkFromCoordinates(
+                            latLng.latitude, latLng.longitude);
+
+                        setLocations(latLng.latitude, latLng.longitude,
+                            placemarks[0].name, 'drop');
+                        print('Drop map is printed');
+
+                        print('${latLng.latitude}, ${latLng.longitude}');
+
+                        print("hjhhjhjhjjhP");
+                      },
+                      initialCameraPosition: _currentDropPosition,
+                      onMapCreated: (dropController) {
+                        //method called when map is created
+                        setState(() {
+                          print("drop map created start");
+                          print(dropLat);
+                          print(dropLan);
+                          print("drop map created");
+
+                          dropMapController = dropController;
+                        });
+                      },
+                    ))
+        ]));
+  }
+
+  void setLocations(double lat, double lan, address, type) {
+    if (type == 'pick') {
+      setState(() {
+        pickLat = lat;
+        pickLan = lan;
+        pickAddress = address;
+        pickAddressController.text = address;
+        pickMapController?.animateCamera(CameraUpdate.newCameraPosition(
+            CameraPosition(target: LatLng(lat, lan), zoom: 25)));
+      });
+    } else {
+      print("check drop location start ");
+      print(lat);
+      print(lan);
+      print(address);
+      print(type);
+
+      print("check drop location end ");
+
+      setState(() {
+        dropLat = lat;
+        dropLan = lan;
+        dropAddress = address;
+        dropAddressController.text = address;
+
+        dropMapController?.animateCamera(CameraUpdate.newCameraPosition(
+            CameraPosition(target: LatLng(lat, lan), zoom: 25)));
+      });
+    }
+  }
+
+// Added Code for Review Details -->
+  Widget reviewDetails(BuildContext context, firestoreUser) {
+    return Stack(children: [
+      SizedBox(
+          height: (MediaQuery.of(context).size.height - 60),
+          child: ListView(padding: const EdgeInsets.all(30), children: <Widget>[
+            // Column for the Job Title, and Street Address -->
+            detailsListWidget('Job Title', titleController.text,
+                '$pickCity, $pickState, $pickZip'),
+            Visibility(
+              visible: barCodeItemNumber != '',
+              child: detailsListWidget(
+                  'Barcode Item Number', barCodeItemNumber, ''),
+            ),
+            detailsListWidget('Item Type', barCodeItem, ''),
+            detailsListWidget('Number of Items', numberOfItem.toString(), ''),
+
+            SizedBox(
+              height: paddingMedium,
+            ),
+            // ListView for the Images Uploaded -->
+            const Padding(
+              padding: EdgeInsets.only(bottom: 2),
+              child: Text('Items Pictures'),
+            ),
+            SizedBox(
+              height: Get.height * 0.15,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 1,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.only(right: paddingSmall),
+                      child: Card(
+                          color: Colors.black,
+                          child: SizedBox(
+                            width: 100.0,
+                            child: Image.network(
+                              itemImage,
+                              fit: BoxFit.fill,
+                            ),
+                          )),
+                    );
+                  }),
+            ),
+            SizedBox(
+              height: paddingMedium,
+            ),
+            detailsListWidget('Need Loading Help?', needLoadUnload, ''),
+            detailsListWidget('Pickup Address', pickAddressController.text,
+                '$pickCity, $pickState, $pickZip'),
+            detailsListWidget('Drop-off Address', dropAddressController.text,
+                '$dropCity, $dropState, $dropZip'),
+            detailsListWidget(
+                'Job Date & Time',
+                '${DateFormat.yMd().format(dateForPickup)} \n${DateFormat.jms().format(timeForPickupLoad)}',
+                ''),
+            detailsListWidget('Contact Time:',
+                DateFormat.jms().format(timeForPickupLoad), ''),
+
+            const SizedBox(
+              height: 60.0,
+            )
           ])),
       Positioned(
         bottom: 0,
@@ -1938,210 +2341,33 @@ class _addPickupJobsState extends State<addPickupJobs> {
     ]);
   }
 
-  Widget getMapArea(BuildContext context, locationType) {
-    return Container(
-        padding: EdgeInsets.all(15),
-        color: Colors.white,
-        height: 300,
-        child: ListView(children: <Widget>[
-          (locationType == 'pick')
-              ? TextField(
-                  controller: _pickSearchController,
-                  decoration: InputDecoration(
-                    labelText: "Search",
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.white,
-                        width: 2.0,
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.black54,
-                        width: 2.0,
-                      ),
-                    ),
-                  ),
-                  onChanged: (value) {
-                    if (value.isNotEmpty) {
-                      autoCompleteSearch(value);
-                    } else {
-                      if (predictions.length > 0 && mounted) {
-                        setState(() {
-                          predictions = [];
-                        });
-                      }
-                    }
-                  },
-                )
-              : TextField(
-                  controller: _dropSearchController,
-                  decoration: InputDecoration(
-                    labelText: "Search",
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.white,
-                        width: 2.0,
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.black54,
-                        width: 2.0,
-                      ),
-                    ),
-                  ),
-                  onChanged: (value) {
-                    if (value.isNotEmpty) {
-                      autoCompleteSearch(value);
-                    } else {
-                      if (predictions.length > 0 && mounted) {
-                        setState(() {
-                          predictions = [];
-                        });
-                      }
-                    }
-                  },
-                ),
-          SizedBox(
-            height: 10,
+// Review Details List Tile Widget -->
+  Widget detailsListWidget(
+      String title, String subtitle, String additionalText) {
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: paddingSmall),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            title,
+            style: TextStyle(color: appWhite, fontWeight: FontWeight.bold),
           ),
-          Container(
-            height: (predictions.length > 0) ? 200 : 0,
-            child: ListView.builder(
-              itemCount: predictions.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  leading: CircleAvatar(
-                    child: Icon(
-                      Icons.pin_drop,
-                      color: Colors.white,
-                    ),
-                  ),
-                  title: Text(predictions[index].description.toString()),
-                  onTap: () async {
-                    print(predictions[index].description);
-                    debugPrint(predictions[index].placeId);
-
-                    var result = await this
-                        .googlePlace
-                        .details
-                        .get(predictions[index].placeId.toString());
-
-                    // if (result != null && result.result != null && mounted) {
-                    print("result detail Start " + locationType);
-                    print(result?.result!.addressComponents);
-
-                    var address = predictions[index].description;
-
-                    double? latitude = result?.result!.geometry?.location?.lat;
-                    double? longitude = result?.result!.geometry?.location?.lng;
-
-                    setLocations(latitude!, longitude!, address, locationType);
-                    //  }
-
-                    setState(() {
-                      if (locationType == 'pick') {
-                        _pickSearchController.text =
-                            predictions[index].description!;
-                      } else {
-                        _dropSearchController.text =
-                            predictions[index].description!;
-                      }
-                      predictions = [];
-                    });
-                    setState(() {});
-                  },
-                );
-              },
-            ),
+          const SizedBox(
+            height: 5.0,
           ),
-          Container(
-              height: 200,
-              child: (locationType == 'pick')
-                  ? GoogleMap(
-                      key: pickMapKey,
-                      onTap: (latLng) async {
-                        placemarks = await placemarkFromCoordinates(
-                            latLng.latitude, latLng.longitude);
-
-                        setLocations(latLng.latitude, latLng.longitude,
-                            placemarks[0].name, 'pick');
-
-                        print(placemarks[0]);
-
-                        print("hjhhjhjhjjhP");
-                      },
-                      initialCameraPosition: currentPickPosition,
-                      onMapCreated: (pickController) {
-                        print("pick map created start");
-                        print(pickLat);
-                        print(pickLan);
-                        print("pick map created");
-                        //method called when map is created
-                        setState(() {
-                          pickMapController = pickController;
-                        });
-                      },
-                    )
-                  : GoogleMap(
-                      key: dropMapKey,
-                      onTap: (latLng) async {
-                        placemarks = await placemarkFromCoordinates(
-                            latLng.latitude, latLng.longitude);
-
-                        setLocations(latLng.latitude, latLng.longitude,
-                            placemarks[0].name, 'drop');
-                        print('Drop map is printed');
-
-                        print('${latLng.latitude}, ${latLng.longitude}');
-
-                        print("hjhhjhjhjjhP");
-                      },
-                      initialCameraPosition: _currentDropPosition,
-                      onMapCreated: (dropController) {
-                        //method called when map is created
-                        setState(() {
-                          print("drop map created start");
-                          print(dropLat);
-                          print(dropLan);
-                          print("drop map created");
-
-                          dropMapController = dropController;
-                        });
-                      },
-                    ))
-        ]));
-  }
-
-  void setLocations(double lat, double lan, address, type) {
-    if (type == 'pick') {
-      setState(() {
-        pickLat = lat;
-        pickLan = lan;
-        pickAddress = address;
-        pickAddressController.text = address;
-        pickMapController?.animateCamera(CameraUpdate.newCameraPosition(
-            CameraPosition(target: LatLng(lat, lan), zoom: 25)));
-      });
-    } else {
-      print("check drop location start ");
-      print(lat);
-      print(lan);
-      print(address);
-      print(type);
-
-      print("check drop location end ");
-
-      setState(() {
-        dropLat = lat;
-        dropLan = lan;
-        dropAddress = address;
-        dropAddressController.text = address;
-
-        dropMapController?.animateCamera(CameraUpdate.newCameraPosition(
-            CameraPosition(target: LatLng(lat, lan), zoom: 25)));
-      });
-    }
+          Text(
+            subtitle,
+            style: TextStyle(color: appWhite, fontWeight: FontWeight.w400),
+          ),
+          Visibility(
+              visible: additionalText != '',
+              child: Text(
+                additionalText,
+                style: TextStyle(color: appWhite, fontWeight: FontWeight.w400),
+              ))
+        ],
+      ),
+    );
   }
 }

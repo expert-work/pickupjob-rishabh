@@ -23,7 +23,7 @@ class _driverHomeState extends State<driverHome> {
 
   static const List<String> _tabNames = [
     'Home',
-    'Search new Jobs',
+    'Search Pickup Jobs',
     'Orders',
     'Chats',
     'Profile'
@@ -162,7 +162,9 @@ class _driverHomeState extends State<driverHome> {
               'Payment Method',
               style: TextStyle(fontSize: 20.0),
             ),
-            onTap: () {},
+            onTap: () {
+              Get.to(Cards());
+            },
           ),
           const Divider(
             height: 10,

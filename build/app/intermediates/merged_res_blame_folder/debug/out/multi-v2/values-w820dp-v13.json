@@ -4,7 +4,7 @@
             "outputFile": "pickupjob.gobizgrow.com.app-mergeDebugResources-86:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/packaged_res/debug/values-w820dp-v13/values-w820dp-v13.xml",
+                    "source": "/Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/packaged_res/debug/values-w820dp-v13/values-w820dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

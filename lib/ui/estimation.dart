@@ -614,7 +614,7 @@ class _EstimationState extends State<Estimation> {
                 children: [
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.all(10),
                       margin: EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -639,7 +639,7 @@ class _EstimationState extends State<Estimation> {
                   ),
                   InkWell(
                     child: Container(
-                      padding: EdgeInsets.all(30),
+                      padding: EdgeInsets.all(10),
                       margin: EdgeInsets.all(10),
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -1305,14 +1305,14 @@ class _EstimationState extends State<Estimation> {
 
   Widget contactPersonDetails(BuildContext context, firestoreUser) {
     return Stack(children: [
-      Container(
+      SizedBox(
           height: (MediaQuery.of(context).size.height - 60),
           child: ListView(padding: const EdgeInsets.all(30), children: <Widget>[
             TextField(
               controller: contactPersonNameController,
-              style: TextStyle(color: Colors.white, fontSize: 20.0),
+              style: const TextStyle(color: Colors.white, fontSize: 20.0),
               //or null
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 fillColor: Colors.white,
                 labelText: 'Contact Person Name',
                 labelStyle: TextStyle(
@@ -1323,7 +1323,7 @@ class _EstimationState extends State<Estimation> {
                 ),
               ),
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             TextField(

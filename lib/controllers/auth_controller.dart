@@ -145,6 +145,7 @@ class AuthController extends GetxController {
           .then((result) async {
         print('uID: ' + result.user!.uid.toString());
         print('email: ' + result.user!.email.toString());
+
         //get photo url from gravatar if user has one
         Gravatar gravatar = Gravatar(emailController.text);
         String gravatarUrl = gravatar.imageUrl(

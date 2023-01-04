@@ -13,63 +13,63 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:5:4-65
-15-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:5:21-63
+15-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:5:4-65
+15-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:5:21-63
 16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-16-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:3:4-75
-16-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:3:21-73
+16-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:3:4-75
+16-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:3:21-73
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:4:4-78
-17-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:4:21-75
+17-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:4:4-78
+17-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:4:21-75
 18    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-18-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:6:4-75
-18-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:6:21-72
+18-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:6:4-75
+18-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:6:21-72
 19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:7:4-80
-19-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:7:21-77
+19-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:7:4-80
+19-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:7:21-77
 20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Internet permission -->
-20-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:8:4-79
-20-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:8:21-76
+20-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:8:4-79
+20-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:8:21-76
 21    <uses-feature
-21-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:4-83
+21-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:9:4-83
 22        android:name="android.hardware.camera"
-22-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:18-56
+22-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:9:18-56
 23        android:required="true" />
-23-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:9:57-80
+23-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:9:57-80
 24
 25    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-25-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:10:4-80
-25-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:10:21-77
+25-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:10:4-80
+25-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:10:21-77
 26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-26-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:11:4-78
-26-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:11:21-75
+26-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:11:4-78
+26-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:11:21-75
 27    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-27-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:12:4-76
-27-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:12:21-73
+27-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:12:4-76
+27-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:12:21-73
 28    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-28-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:13:4-83
-28-->/Users/sypsys/Desktop/pickupjob2/android/app/src/main/AndroidManifest.xml:13:21-81
+28-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:13:4-83
+28-->/Users/sypsys/Documents/GitHub/pickupjob-rishabh/android/app/src/main/AndroidManifest.xml:13:21-81
 29    <uses-permission android:name="android.permission.WAKE_LOCK" />
-29-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
-29-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
+29-->[:firebase_analytics] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-68
+29-->[:firebase_analytics] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-65
 30    <uses-permission android:name="android.permission.CAMERA" />
-30-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-65
-30-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-62
+30-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-65
+30-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-62
 31    <uses-permission android:name="android.permission.FLASHLIGHT" />
-31-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-69
-31-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-66
+31-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-69
+31-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-66
 32    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-32-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
-32-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+32-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+32-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
 33    <uses-permission android:name="android.permission.VIBRATE" />
-33-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
-33-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+33-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+33-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
 34    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-34-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
-34-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+34-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+34-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
 35    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- See https://developer.android.com/training/package-visibility/declaring for more details. -->
-35-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
-35-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+35-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+35-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
 36    <queries>
 36-->[com.stripe:financial-connections:20.15.4] /Users/sypsys/.gradle/caches/transforms-3/f416941115a3690293a0eaa210e8b25f/transformed/jetified-financial-connections-20.15.4/AndroidManifest.xml:12:5-20:15
 37
@@ -139,9 +139,9 @@
 72        android:icon="@mipmap/launcher_icon"
 73        android:label="pickupjob"
 74        android:largeHeap="true"
-74-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-33
+74-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-33
 75        android:theme="@style/Theme.AppCompat.NoActionBar" >
-75-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-59
+75-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-59
 76        <activity
 77            android:name="pickupjob.gobizgrow.com.MainActivity"
 78            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
@@ -203,49 +203,49 @@
 133        </receiver>
 134
 135        <service
-135-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
+135-->[:cloud_firestore] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:19
 136            android:name="com.google.firebase.components.ComponentDiscoveryService"
-136-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
+136-->[:cloud_firestore] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:10:18-89
 137            android:directBootAware="true"
 137-->[com.google.firebase:firebase-common:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/ee5687cf53faa213ee93754c89318387/transformed/jetified-firebase-common-20.2.0/AndroidManifest.xml:34:13-43
 138            android:exported="false" >
 138-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:23:13-37
 139            <meta-data
-139-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+139-->[:cloud_firestore] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 140                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-140-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
+140-->[:cloud_firestore] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-134
 141                android:value="com.google.firebase.components.ComponentRegistrar" />
-141-->[:cloud_firestore] /Users/sypsys/Desktop/pickupjob2/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+141-->[:cloud_firestore] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 142            <meta-data
-142-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+142-->[:firebase_analytics] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
 143                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
-143-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
+143-->[:firebase_analytics] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
 144                android:value="com.google.firebase.components.ComponentRegistrar" />
-144-->[:firebase_analytics] /Users/sypsys/Desktop/pickupjob2/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+144-->[:firebase_analytics] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
 145            <meta-data
-145-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+145-->[:firebase_auth] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 146                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-146-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+146-->[:firebase_auth] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 147                android:value="com.google.firebase.components.ComponentRegistrar" />
-147-->[:firebase_auth] /Users/sypsys/Desktop/pickupjob2/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+147-->[:firebase_auth] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_auth/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 148            <meta-data
-148-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+148-->[:firebase_storage] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 149                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
-149-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-126
+149-->[:firebase_storage] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-126
 150                android:value="com.google.firebase.components.ComponentRegistrar" />
-150-->[:firebase_storage] /Users/sypsys/Desktop/pickupjob2/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+150-->[:firebase_storage] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 151            <meta-data
-151-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
+151-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-40:85
 152                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-152-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
+152-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:39:17-128
 153                android:value="com.google.firebase.components.ComponentRegistrar" />
-153-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
+153-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-82
 154            <meta-data
-154-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+154-->[:firebase_core] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
 155                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-155-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+155-->[:firebase_core] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
 156                android:value="com.google.firebase.components.ComponentRegistrar" />
-156-->[:firebase_core] /Users/sypsys/Desktop/pickupjob2/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+156-->[:firebase_core] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
 157            <meta-data
 157-->[com.google.firebase:firebase-inappmessaging-display:20.2.0] /Users/sypsys/.gradle/caches/transforms-3/a86c4e19173e0c073599ea774ccc3d59/transformed/jetified-firebase-inappmessaging-display-20.2.0/AndroidManifest.xml:24:13-26:85
 158                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
@@ -314,119 +314,119 @@
 189-->[com.google.firebase:firebase-abt:21.1.0] /Users/sypsys/.gradle/caches/transforms-3/ea1ed5d85f6f1b1549e3ed796db072c5/transformed/jetified-firebase-abt-21.1.0/AndroidManifest.xml:14:17-82
 190        </service>
 191        <service
-191-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
+191-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-19:72
 192            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-192-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
+192-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-107
 193            android:exported="false"
-193-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+193-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
 194            android:permission="android.permission.BIND_JOB_SERVICE" />
-194-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
+194-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-69
 195        <service
-195-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
+195-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:9-26:19
 196            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-196-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
+196-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-97
 197            android:exported="false" >
-197-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
+197-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-37
 198            <intent-filter>
-198-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+198-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
 199                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-199-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-199-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+199-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+199-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
 200            </intent-filter>
 201        </service>
 202
 203        <receiver
-203-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
+203-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:9-35:20
 204            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-204-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
+204-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-98
 205            android:exported="true"
-205-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
+205-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-36
 206            android:permission="com.google.android.c2dm.permission.SEND" >
-206-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
+206-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-73
 207            <intent-filter>
-207-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+207-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
 208                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-208-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-208-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+208-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+208-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
 209            </intent-filter>
 210        </receiver>
 211
 212        <provider
-212-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
+212-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:9-47:38
 213            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-213-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
+213-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-102
 214            android:authorities="pickupjob.gobizgrow.com.flutterfirebasemessaginginitprovider"
-214-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
+214-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-88
 215            android:exported="false"
-215-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
+215-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-37
 216            android:initOrder="99" />
-216-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
+216-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-35
 217
 218        <service
-218-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:56
+218-->[:geolocator_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:56
 219            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-219-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
+219-->[:geolocator_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
 220            android:enabled="true"
-220-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
+220-->[:geolocator_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
 221            android:exported="false"
-221-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+221-->[:geolocator_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
 222            android:foregroundServiceType="location" />
-222-->[:geolocator_android] /Users/sypsys/Desktop/pickupjob2/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
+222-->[:geolocator_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
 223
 224        <activity android:name="com.amolg.flutterbarcodescanner.BarcodeCaptureActivity" />
-224-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-91
-224-->[:flutter_barcode_scanner] /Users/sypsys/Desktop/pickupjob2/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:19-88
+224-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-91
+224-->[:flutter_barcode_scanner] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_barcode_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:18:19-88
 225
 226        <provider
-226-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+226-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
 227            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-227-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+227-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
 228            android:authorities="pickupjob.gobizgrow.com.flutter.image_provider"
-228-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+228-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
 229            android:exported="false"
-229-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+229-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
 230            android:grantUriPermissions="true" >
-230-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+230-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
 231            <meta-data
-231-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+231-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
 232                android:name="android.support.FILE_PROVIDER_PATHS"
-232-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+232-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
 233                android:resource="@xml/flutter_image_picker_file_paths" />
-233-->[:image_picker_android] /Users/sypsys/Desktop/pickupjob2/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+233-->[:image_picker_android] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
 234        </provider>
 235
 236        <receiver
-236-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+236-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
 237            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
-237-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+237-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
 238            android:exported="false" />
-238-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+238-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
 239        <receiver
-239-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+239-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
 240            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
-240-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+240-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
 241            android:exported="false" />
-241-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+241-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
 242        <receiver
-242-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+242-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
 243            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
-243-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+243-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
 244            android:exported="false" >
-244-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+244-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
 245            <intent-filter>
-245-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+245-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
 246                <action android:name="android.intent.action.BOOT_COMPLETED" />
-246-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
-246-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+246-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+246-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
 247                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-247-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
-247-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+247-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+247-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
 248                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-248-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
-248-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+248-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+248-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
 249                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-249-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
-249-->[:flutter_local_notifications] /Users/sypsys/Desktop/pickupjob2/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+249-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+249-->[:flutter_local_notifications] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
 250            </intent-filter>
 251        </receiver>
 252
@@ -763,10 +763,10 @@
 430            android:permission="com.google.android.c2dm.permission.SEND" >
 430-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:34:13-73
 431            <intent-filter>
-431-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
+431-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-34:29
 432                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-432-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
-432-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
+432-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-81
+432-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-78
 433            </intent-filter>
 434        </receiver>
 435        <!--
@@ -782,10 +782,10 @@
 442            android:exported="false" >
 442-->[com.google.firebase:firebase-messaging:23.1.0] /Users/sypsys/.gradle/caches/transforms-3/54c9e7e2ec2bb273b4d612062ca94228/transformed/jetified-firebase-messaging-23.1.0/AndroidManifest.xml:47:13-37
 443            <intent-filter android:priority="-500" >
-443-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
+443-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-25:29
 444                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-444-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
-444-->[:firebase_messaging] /Users/sypsys/Desktop/pickupjob2/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
+444-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-78
+444-->[:firebase_messaging] /Users/sypsys/Documents/GitHub/pickupjob-rishabh/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-75
 445            </intent-filter>
 446        </service>
 447

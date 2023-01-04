@@ -146,16 +146,16 @@ class _driverCompleteProfileState extends State<driverCompleteProfile> {
                 iconTheme: const IconThemeData(color: Colors.white),
                 backgroundColor: Colors.black87,
                 title: const Text('Complete Profile'),
-                actions: [
-                  IconButton(
-                      icon: const Icon(
-                        Icons.logout,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {
-                        AuthController.to.signOut();
-                      }),
-                ],
+                // actions: [
+                //   IconButton(
+                //       icon: const Icon(
+                //         Icons.logout,
+                //         color: Colors.white,
+                //       ),
+                //       onPressed: () {
+                //         AuthController.to.signOut();
+                //       }),
+                // ],
               ),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.endFloat,

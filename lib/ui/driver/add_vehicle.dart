@@ -204,17 +204,17 @@ class _addVehicleState extends State<addVehicle> {
                 appBar: AppBar(
                   iconTheme: const IconThemeData(color: Colors.white),
                   backgroundColor: Colors.black87,
-                  title: Text('Add Vehicle'),
-                  actions: [
-                    IconButton(
-                        icon: Icon(
-                          Icons.logout,
-                          color: Colors.white,
-                        ),
-                        onPressed: () {
-                          AuthController.to.signOut();
-                        }),
-                  ],
+                  title: const Text('Add Vehicle'),
+                  // actions: [
+                  //   IconButton(
+                  //       icon: Icon(
+                  //         Icons.logout,
+                  //         color: Colors.white,
+                  //       ),
+                  //       onPressed: () {
+                  //         AuthController.to.signOut();
+                  //       }),
+                  // ],
                 ),
                 body: Stack(
                   children: [

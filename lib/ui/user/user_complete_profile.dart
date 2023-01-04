@@ -146,16 +146,16 @@ class _userCompleteProfileState extends State<userCompleteProfile> {
                 iconTheme: const IconThemeData(color: Colors.white),
                 backgroundColor: Colors.black87,
                 title: Text('Complete Profile'),
-                actions: [
-                  IconButton(
-                      icon: Icon(
-                        Icons.logout,
-                        color: Colors.white,
-                      ),
-                      onPressed: () {
-                        AuthController.to.signOut();
-                      }),
-                ],
+                // actions: [
+                //   IconButton(
+                //       icon: Icon(
+                //         Icons.logout,
+                //         color: Colors.white,
+                //       ),
+                //       onPressed: () {
+                //         AuthController.to.signOut();
+                //       }),
+                // ],
               ),
               floatingActionButtonLocation:
                   FloatingActionButtonLocation.endFloat,

@@ -606,7 +606,7 @@ class _ProposalsAcceptRejectState extends State<ProposalsAcceptReject> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.all(15),
+                                    padding: EdgeInsets.all(10),
                                     margin: EdgeInsets.all(10),
                                     width: double.infinity,
                                     decoration: BoxDecoration(
